@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Tools/psiegman-epublib-4936fd9/epublib-core/src/examples/java" />
+      <root url="file://$PROJECT_DIR$/Tools/psiegman-epublib-4936fd9/epublib-core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/Tools/psiegman-epublib-4936fd9/epublib-core/src/test/java" />
+      <root url="file://$PROJECT_DIR$/Tools/psiegman-epublib-4936fd9/epublib-tools/src/main/java" />
+      <root url="file://$PROJECT_DIR$/Tools/psiegman-epublib-4936fd9/epublib-tools/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

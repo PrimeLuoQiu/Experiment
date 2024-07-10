@@ -1,0 +1,37 @@
+.root {
+    -fx-background-size: cover;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+    -fx-font-size: 24;
+}
+
+.button {
+    -fx-text-fill: black;
+}
+
+#setTimes {
+    -fx-font-size: 20;
+    -fx-background-color: lightpink;
+    -fx-background-radius: 10px ;
+}
+
+#addWork {
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+    -fx-font-size: 10;
+    -fx-border-color: orange;
+    -fx-font-color: yellow;
+}
+
+#userName {
+    -fx-font-size: 20px;
+    -fx-text-fill: skyblue;
+}
+
+#menuList {
+    -fx-text-fill: skyblue
+}

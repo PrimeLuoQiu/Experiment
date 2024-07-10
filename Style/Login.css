@@ -1,0 +1,22 @@
+.root {
+    -fx-background-size: center;
+}
+
+.text-field {
+    -fx-background-color: transparent; /* 设置文本框背景透明 */
+    -fx-border-color: transparent transparent black transparent; /* 设置底部边框颜色为黑色 */
+    -fx-border-width: 0 0 1 0; /* 设置底部边框宽度为1像素，初始时隐藏 */
+    -fx-padding: 0 0 5 0; /* 设置文本框内边距 */
+    -fx-font-size: 14px; /* 设置字体大小 */
+}
+
+.text-field:hover {
+    -fx-border-color: linear-gradient(to right, blue, green); /* 鼠标悬停时，底部边框从左到右渐变显示为蓝色到绿色 */
+}
+
+
+.button {
+    -fx-border-style: none;
+    -fx-border-radius: 10;
+    -fx-background-color: skyblue;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="Style/Index.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Index">
+   <children>
+      <ListView fx:id="listView" prefHeight="600.0" prefWidth="100.0" />
+      <Pane fx:id="userPane" layoutX="92.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-image: url('Image/userCenter.jpg')">
+         <children>
+            <Label fx:id="setTimes" alignment="CENTER" layoutX="600.0" layoutY="400.0" prefHeight="81.0" prefWidth="279.0" text="Label" />
+            <Label fx:id="userName" layoutX="800.0" prefHeight="41.0" prefWidth="100.0" text="Label" />
+            <TextField fx:id="addWork" layoutX="150.0" layoutY="400.0" />
+            <ListView fx:id="workList" layoutX="125.0" layoutY="426.0" prefHeight="175.0" prefWidth="200.0" />
+            <Button fx:id="addNewWork" layoutX="310.0" layoutY="395.0" minHeight="16.0" minWidth="51.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" text="添加" />
+            <Label fx:id="menuList" alignment="CENTER" layoutX="184.0" layoutY="365.0" text="任务清单" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="findSongs" layoutX="100.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-image: url('Image/haveRelax.jpg')" visible="false">
+         <children>
+            <Button fx:id="searchButton" layoutX="91.0" layoutY="10.0" prefHeight="31.0" prefWidth="100.0" text="搜索" />
+            <TextField fx:id="searchField" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="71.0" />
+            <ListView fx:id="musicList" layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="300.0" />
+            <ProgressBar fx:id="progressBar" layoutX="10.0" layoutY="270.0" prefWidth="300.0" />
+            <StackPane layoutX="10.0" layoutY="320.0" prefHeight="50.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="prevButton" layoutX="50.0" layoutY="50.0" style="-fx-background-radius: 50; -fx-min-width: 50px; -fx-min-height: 50px;" translateX="-130.0" />
+                  <Button fx:id="playPauseButton" style="-fx-background-radius: 50; -fx-min-width: 50px; -fx-min-height: 50px;" />
+                  <Button fx:id="nextButton" style="-fx-background-radius: 50; -fx-min-width: 50px; -fx-min-height: 50px;" translateX="130.0" />
+               </children>
+            </StackPane>
+            <MediaView fx:id="musicPlayer" fitHeight="200.0" fitWidth="300.0" layoutX="10.0" layoutY="380.0" />
+            <TextField fx:id="lyricsField" layoutX="30.0" layoutY="450.0" prefHeight="118.0" prefWidth="300.0" />
+            <ImageView fx:id="albumImageView" fitHeight="273.0" fitWidth="355.0" layoutX="550.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="findSource" layoutX="100.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-image: url('Image/readingBooks.jpg')" visible="false">
+         <children>
+            <ListView fx:id="epubListView" layoutX="10.0" layoutY="10.0" prefHeight="580.0" prefWidth="300.0" />
+            <Pane layoutX="320.0" layoutY="10.0" prefHeight="580.0" prefWidth="660.0">
+               <WebView fx:id="webView" prefHeight="580.0" prefWidth="660.0" />
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="aboutUs" layoutX="100.0" prefHeight="600.0" prefWidth="1180.0" style="-fx-background-image: url('Image/userCenter.jpg')" visible="false">
+         <children>
+            <Label fx:id="aboutMe" layoutX="20.0" layoutY="20.0" />
+            <ImageView fitHeight="500.0" fitWidth="300.0" layoutX="20.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/icons/wechat.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="500.0" fitWidth="300.0" layoutX="300.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/icons/Tencent.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

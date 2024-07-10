@@ -1,0 +1,21 @@
+.root {
+    -fx-background-size: cover;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-font-size: 14;
+}
+
+.button:hover {
+    -fx-background-color: blue;
+}
+
+.label {
+    -fx-font-size: 32px; /* 设置标签字体大小 */
+    -fx-text-fill: #333; /* 设置标签文字颜色 */
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-padding: 0 0 0 -55;
+}
